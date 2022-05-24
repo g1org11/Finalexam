@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
 }
 body {
 }
@@ -9,6 +11,7 @@ body {
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
+  padding: 5px;
 }
 .information {
   background-color: #dddddd;
@@ -45,13 +48,33 @@ body {
   color: #242424;
   top: 55px;
 }
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.slide-img {
+  width: 800px;
+  height: 620px;
+}
 .headercontent {
   display: flex;
   justify-items: center;
-}
-.img {
-  width: 800px;
-  height: 600px;
 }
 
 .aboutmyself {
@@ -68,7 +91,7 @@ body {
   line-height: 78px;
   color: #212121;
 }
-.doe {
+.name {
   font-size: 71px;
   letter-spacing: 1.06px;
   line-height: 78px;
@@ -95,4 +118,171 @@ body {
 }
 .black {
   color: #212121;
+}
+.myinfo {
+  display: flex;
+  justify-content: center;
+}
+.my-info-content {
+  max-width: 334px;
+  height: 369px;
+  text-align: right;
+  margin-right: 65px;
+  margin-top: 218px;
+}
+.fullname {
+  font-size: 40px;
+  margin-bottom: 5px;
+  color: #222222;
+}
+.job-info {
+  font-size: 14px;
+  color: #daae19;
+  margin-bottom: 33px;
+}
+.biography {
+  width: 334px;
+  height: 149px;
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: 0.45px;
+  margin-bottom: 53px;
+}
+.hireme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 152px;
+  height: 50px;
+  font-size: 15px;
+  line-height: 29px;
+  text-align: right;
+  color: #ffffff;
+  background-color: #e93656;
+}
+.myimg {
+  margin-top: 138px;
+  width: 430px;
+  height: 603px;
+}
+.skill-bars {
+  margin-top: 190px;
+  margin-left: 70px;
+  padding: 25px 30px;
+  width: 300px;
+  background: #fff;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.skill-bars .bar {
+  margin: 45px 0;
+}
+.skill-bars .bar:first-child {
+  margin-top: 15px 0;
+}
+.skill-bars .bar .info {
+  margin-bottom: 15px;
+}
+.skill-bars .bar .info span {
+  font-weight: 500;
+  font-size: 20px;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+}
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+.percent {
+  color: #e93656;
+}
+.skill-bars .bar .progress-line {
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05), 0 1px rgba(255, 255, 255, 0.8);
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+.bar .progress-line span {
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: #e93656;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+.bar .progress-line.Design span {
+  width: 80%;
+}
+.bar .progress-line.photography span {
+  width: 65%;
+}
+.bar .progress-line.Marking span {
+  width: 50%;
+}
+.bar .progress-line.Photoshop span {
+  width: 30%;
+}
+
+.progress-line span::after {
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-weight: 500;
+  background: #000;
+  color: #fff;
+  padding: 1px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+  100% {
+    opacity: 1;
+  }
+}
+.progress-line.html span::after {
+  content: "90%";
+}
+.progress-line.css span::after {
+  content: "60%";
+}
+.progress-line.jquery span::after {
+  content: "85%";
+}
+.progress-line.python span::after {
+  content: "50%";
+}
+.progress-line.mysql span::after {
+  content: "75%";
+}
+.img-icons {
+  display: flex;
+}
+.icon-div {
+  padding: 17px 15px;
+}
+
+.icon-div .icon-a .icon-img {
+  justify-content: center;
+  align-items: center;
+}
+.icon-img {
+  width: 25px;
+  height: 25px;
+}
+.icon-div:hover {
+  background-color: #15263e;
 }
