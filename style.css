@@ -331,6 +331,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 160px;
 }
 .serviceicon {
   width: 60px;
@@ -347,4 +348,84 @@ body {
   height: 360px;
 
   background-color: #fafafa;
+}
+
+.Recommendations {
+  width: 100%;
+  background-image: url("img/countdown-bg.png");
+  height: 570px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-wrapper {
+  display: flex;
+}
+.slider-item {
+  display: flex;
+  display: none;
+
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.slider-item.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+  opacity: 1;
+}
+
+.txt {
+  max-width: 497px;
+  height: 78px;
+  text-align: right;
+  margin-right: 65px;
+  font-size: 15px;
+  letter-spacing: 0.45px;
+  line-height: 30px;
+}
+.image {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+.tt {
+  width: 39px;
+  height: 26px;
+  margin-bottom: 38px;
+}
+.slide4-img {
+  padding: 15px;
+  border: 2px dotted black;
+  border-radius: 50%;
+  margin-right: 65px;
+}
+.slide4-job {
+  font-size: 13px;
+  letter-spacing: 0.52px;
+}
+.slide4-job:hover {
+  color: #e93656;
+}
+.slide4-name {
+  font-size: 28px;
+  letter-spacing: 0.84px;
+}
+.ball {
+  width: 13px;
+  height: 13px;
+  border: none;
+  margin-top: 10px;
+}
+.ball:hover {
+  background-color: #e93656;
+}
+
+.balls {
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
 }

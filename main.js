@@ -19,3 +19,49 @@ function showSlides() {
 
   setTimeout(showSlides, 5000); // Change image every 2 seconds
 }
+// slider
+const slideItems = document.querySelectorAll(".slider-item");
+
+const balls = document.querySelectorAll(".ball");
+
+let activeIndex = 0;
+
+initSlider();
+function initSlider() {
+  balls.forEach((ball, ballIndex) => {
+    ball.addEventListener("click", () => {
+      handleBallClick(ballIndex);
+    });
+  });
+}
+
+function renderSliders() {
+  slideItems.forEach((item, i) => {
+    if (activeIndex === i) {
+      item.classList.add("active");
+    } else {
+      item.classList.remove("active");
+    }
+  });
+}
+
+function showPrevSlide() {
+  activeIndex = activeIndex - 1;
+  if (activeIndex < 0) {
+    activeIndex = slideItems.length - 1;
+  }
+  renderSliders();
+}
+
+function showNextSlide() {
+  activeIndex = activeIndex + 1;
+  if (activeIndex > slideItems.length - 1) {
+    activeIndex = 0;
+  }
+  renderSliders();
+}
+
+function handleBallClick(nextIndex) {
+  activeIndex = nextIndex;
+  renderSliders();
+}
