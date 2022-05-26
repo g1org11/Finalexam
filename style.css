@@ -5,8 +5,7 @@
   text-decoration: none;
   list-style-type: none;
 }
-body {
-}
+
 .conteiner {
   max-width: 1600px;
   width: 100%;
@@ -253,21 +252,7 @@ body {
     opacity: 1;
   }
 }
-.progress-line.html span::after {
-  content: "90%";
-}
-.progress-line.css span::after {
-  content: "60%";
-}
-.progress-line.jquery span::after {
-  content: "85%";
-}
-.progress-line.python span::after {
-  content: "50%";
-}
-.progress-line.mysql span::after {
-  content: "75%";
-}
+
 .img-icons {
   display: flex;
 }
@@ -357,6 +342,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 144px;
 }
 
 .slider-wrapper {
@@ -428,4 +414,93 @@ body {
   display: flex;
   flex-direction: column;
   margin-left: 150px;
+}
+.section5-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 55px;
+}
+.section5-title h1 {
+  font-size: 70px;
+  line-height: 36px;
+  margin-bottom: 55px;
+}
+.projectbody {
+  display: flex;
+  justify-content: center;
+}
+.projects {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  gap: 0;
+  margin-left: 30px;
+}
+.lists {
+  background-color: #15263e;
+  width: 240px;
+  height: 401px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lists-ul {
+}
+.lists-ul li {
+  font-size: 22px;
+  line-height: 40px;
+  color: #ffffff;
+}
+.lists-ul li:hover {
+  color: #e93656;
+  cursor: pointer;
+}
+.project-imgs {
+  width: 300px;
+  height: 350px;
+  display: block;
+}
+.project-contents {
+  position: relative;
+}
+.image__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+.image__overlay:hover {
+  opacity: 1;
+}
+.heart {
+  width: 14px;
+  height: 12px;
+}
+.image__title {
+  font-size: 11px;
+  letter-spacing: 0.33px;
+  color: #dddddd;
+}
+.heart-div {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #e93656;
+  border-radius: 50%;
+  margin-bottom: 17px;
+}
+.image__description {
+  font-size: 23px;
+  margin-top: 8px;
 }
