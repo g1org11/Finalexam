@@ -16,7 +16,7 @@
   background-color: #dddddd;
   max-width: 1600px;
   width: 100%;
-  height: 900px;
+  height: 750px;
   margin: 0 auto;
   padding: 15px;
 }
@@ -27,25 +27,29 @@
 .p-roca {
   font-size: 45px;
   line-height: 55px;
+  font-family: "Poppins-ExtraBold";
 }
 .p-resume {
   color: #b3b3b3;
   font-size: 13px;
+  font-family: "Montserrat-Regular";
 }
 .number {
-  font-size: 158px;
+  font-size: 158.3px;
   letter-spacing: 4.75px;
   line-height: 150px;
   position: relative;
-  color: #6e6c6c;
+  color: #242424;
+  font-family: "Poppins-ExtraBold";
 }
 .about {
   font-size: 43px;
   letter-spacing: 1.3px;
   line-height: 52px;
   position: absolute;
-  color: #242424;
+  color: #6e6c6c;
   top: 55px;
+  font-family: "Poppins-ExtraBold";
 }
 .slideshow-container {
   max-width: 1000px;
@@ -68,12 +72,16 @@
   }
 }
 .slide-img {
-  width: 800px;
-  height: 620px;
+  width: 430px;
+  height: 603px;
+  margin-top: 138px;
 }
 .headercontent {
   display: flex;
-  justify-items: center;
+  justify-content: center;
+  margin-bottom: 170px;
+  margin-top: 100px;
+  margin-left: 100px;
 }
 
 .aboutmyself {
@@ -89,15 +97,17 @@
   letter-spacing: 0.75px;
   line-height: 78px;
   color: #212121;
+  font-family: "Regular";
 }
 .name {
   font-size: 71px;
   letter-spacing: 1.06px;
   line-height: 78px;
+  font-family: "Bold";
 }
 .disigner {
   font-size: 23px;
-  line-height: 64px;
+  font-family: "Regular";
 }
 .pic {
   width: 27px;
@@ -114,6 +124,7 @@
   color: #e93656;
   padding-bottom: 15px;
   border-bottom: 5px solid #e93656;
+  font-family: "Montserrat-Bold";
 }
 .black {
   color: #212121;
@@ -133,11 +144,13 @@
   font-size: 40px;
   margin-bottom: 5px;
   color: #222222;
+  font-family: "Bold";
 }
 .job-info {
   font-size: 14px;
   color: #daae19;
   margin-bottom: 33px;
+  font-family: "Muli";
 }
 .biography {
   width: 334px;
@@ -146,11 +159,13 @@
   line-height: 26px;
   letter-spacing: 0.45px;
   margin-bottom: 53px;
+  font-family: "Muli-Regular";
 }
 .hireme {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: right;
   width: 152px;
   height: 50px;
   font-size: 15px;
@@ -159,11 +174,7 @@
   color: #ffffff;
   background-color: #e93656;
 }
-.myimg {
-  margin-top: 138px;
-  width: 430px;
-  height: 603px;
-}
+
 .skill-bars {
   margin-top: 190px;
   margin-left: 70px;
@@ -187,6 +198,7 @@
   font-size: 20px;
   opacity: 0;
   animation: showText 0.5s 1s linear forwards;
+  font-family: "Bold";
 }
 @keyframes showText {
   100% {
@@ -282,7 +294,7 @@
 }
 .contact-img {
   padding: 30px;
-  border: 2px dotted white;
+  border: 2px dashed #ffffff;
   border-radius: 50%;
   margin-right: 30px;
 }
@@ -296,21 +308,25 @@
   height: 30px;
 }
 .contact-img:hover {
+  cursor: pointer;
   background-color: #e93656;
-  border: none;
+  transition: 500ms linear;
+  opacity: 1;
 }
-.cont3-title {
+.slide4-job {
   font-size: 25px;
   letter-spacing: 0.75px;
   line-height: 30px;
   color: #ffffff;
   margin-bottom: 15px;
+  font-family: "Bold";
 }
 .cont3-p {
   font-size: 14px;
   letter-spacing: 0.42px;
   line-height: 24px;
   color: #dfdfdf;
+  font-family: "Muli";
 }
 .service {
   display: grid;
@@ -328,6 +344,7 @@
   font-size: 22px;
   letter-spacing: 0.44px;
   line-height: 28px;
+  font-family: "Bold";
   color: #222222;
 }
 .service-div {
@@ -366,12 +383,14 @@
   letter-spacing: 0.44px;
   line-height: 28px;
   margin-bottom: 20px;
+  font-family: "Bold";
 }
 .description-text {
   text-align: center;
   font-size: 14px;
   letter-spacing: 0.42px;
   line-height: 26px;
+  font-family: "Muli";
 }
 .Recommendations {
   width: 100%;
@@ -410,6 +429,7 @@
   font-size: 15px;
   letter-spacing: 0.45px;
   line-height: 30px;
+  font-family: "Roboto-Light";
 }
 .image {
   width: 140px;
@@ -430,6 +450,7 @@
 .slide4-job {
   font-size: 13px;
   letter-spacing: 0.52px;
+  font-family: "Roboto-Regular";
 }
 .slide4-job:hover {
   color: #e93656;
@@ -437,6 +458,7 @@
 .slide4-name {
   font-size: 28px;
   letter-spacing: 0.84px;
+  font-family: "Bold";
 }
 .ball {
   width: 13px;
@@ -465,6 +487,7 @@
   font-size: 70px;
   line-height: 36px;
   margin-bottom: 55px;
+  font-family: "Bold";
 }
 .projectbody {
   display: flex;
@@ -490,6 +513,7 @@
   font-size: 22px;
   line-height: 40px;
   color: #ffffff;
+  font-family: "Bold";
 }
 .lists-ul li:hover {
   color: #e93656;
@@ -530,6 +554,7 @@
   font-size: 11px;
   letter-spacing: 0.33px;
   color: #dddddd;
+  font-family: "Muli";
 }
 .heart-div {
   width: 50px;
@@ -540,6 +565,7 @@
   border: 2px solid #e93656;
   border-radius: 50%;
   margin-bottom: 17px;
+  font-family: "Bold";
 }
 .image__description {
   font-size: 23px;
@@ -553,10 +579,12 @@
 .news {
   font-size: 13px;
   color: #2ed279;
+  font-family: "Bold";
 }
 .articles-content {
   display: flex;
   justify-content: center;
+  font-family: "Bold";
 }
 .articles-title {
   font-size: 70px;
@@ -595,6 +623,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Jaapokki";
 }
 .section-1-img img {
   width: 29px;
@@ -632,16 +661,19 @@
   letter-spacing: 1.12px;
   color: #888888;
   margin-bottom: 5px;
+  font-family: "Muli";
 }
 .article-title {
   font-size: 40px;
   color: #161616;
   margin-bottom: 28px;
+  font-family: "Bold";
 }
 .article-decription {
   font-size: 16px;
   letter-spacing: 0.48px;
   margin-bottom: 10px;
+  font-family: "Muli";
 }
 .read {
   font-size: 13px;
@@ -696,6 +728,7 @@
 .rosa-description h4 {
   font-size: 16px;
   letter-spacing: 0.32px;
+  font-family: "Poppins-SemiBold";
 
   color: #161616;
 }
@@ -703,6 +736,7 @@
   font-size: 13px;
   text-align: center;
   letter-spacing: 0.39px;
+  font-family: "Roboto-Light";
   color: #626262;
 }
 .team img {
@@ -713,7 +747,9 @@
 .rosa-titles p {
   font-size: 14px;
   color: #2ed279;
+  font-family: "Bold";
 }
 .rosa-titles h2 {
   font-size: 70px;
+  font-family: "Bold";
 }
