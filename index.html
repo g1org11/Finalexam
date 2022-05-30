@@ -292,15 +292,15 @@
           </div>
           <div class="projectbody">
             <div class="lists">
-              <ul class="lists-ul">
-                <li>All</li>
-                <li class="work">Work ideas</li>
-                <li class="mock">Mockup</li>
-                <li class="psd">PSD Design</li>
-                <li class="logo">Logo</li>
-                <li class="presentation">Presentation</li>
-                <li class="icons">Icons</li>
-              </ul>
+              <div id="sidebar">
+                <button class="btn active" onclick="filter('all')">all</button>
+                <button class="btn" onclick="filter('workIdeas')">Work Idea</button>
+                <button class="btn" onclick="filter('MockupDesign')">MockupDesign</button>
+                <button class="btn" onclick="filter('PSDDesign')">PSDDesign</button>
+                <button class="btn" onclick="filter('mylogo')">myLogo</button>
+                <button class="btn" onclick="filter('myPresentation')">My Presentation</button>
+                <button class="btn" onclick="filter('myIcons')">My Icons</button>
+              </div>
             </div>
             <div class="projects">
               <div class="project-contents">
@@ -473,6 +473,29 @@
                 <div class="rosa-description">
                   <h4>CLIENT 2</h4>
                   <p>Lorm ipm dolr amt consect mag maiores.Ipsa dolor sit magnam maores.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="login-g">
+          <div class="login">
+            <div class="login-form">
+              <div class="login-titles">
+                <h3>CONTACT US</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              </div>
+              <div class="form-content">
+                <div class="form-inputes">
+                  <input type="text " placeholder="Your Name" />
+                  <input type="mail " placeholder=" Email Address" />
+                  <input type="text" placeholder="Email Address" />
+                </div>
+                <div class="form-area">
+                  <textarea name="area" id="area" placeholder="Message"></textarea>
+                </div>
+                <div class="submit">
+                  <input type="submit" value="SEND MESSAGE" />
                 </div>
               </div>
             </div>
