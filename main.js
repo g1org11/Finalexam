@@ -110,3 +110,50 @@ for (let i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+const yourname = document.querySelector(".yourname");
+const email = document.querySelector(".emailaddress");
+const website = document.querySelector(".Yourwebsite");
+const massage = document.querySelector("#area");
+const submit = document.querySelector("submit");
+const loginform = document.querySelector("login-form");
+async function getUsers() {
+  try {
+    const response = await fetch("http://api.kesho.me/v1/user-test/contact");
+    const users = await response.json();
+  } catch (e) {
+    console.log("Error - ", e);
+  }
+}
+
+getUsers();
+async function createUser(userData) {
+  try {
+    const response = await fetch("http://api.kesho.me/v1/user-test/create", {
+      method: "post",
+      body: JSON.stringify(userData),
+      headers: { "Content-Type": "application/json" },
+    });
+    await response.json();
+    await getUsers(); // TODO: შენახვის ედიტირების და წაშლის შემდეგ ახლიდან წამოიღეთ დატა
+  } catch (e) {
+    console.log("Error - ", e);
+  }
+}
+
+loginform.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const userData = {
+    first_name: yourname.value,
+    email: email.value,
+    web: website.value,
+    massage: massage.value,
+  };
+
+  if (yourname.value === "") {
+    // იქმნება
+    await createUser(userData);
+  }
+
+  loginform.reset();
+});
