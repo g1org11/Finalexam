@@ -114,8 +114,8 @@ const yourname = document.querySelector(".yourname");
 const email = document.querySelector(".emailaddress");
 const website = document.querySelector(".Yourwebsite");
 const massage = document.querySelector("#area");
-const submit = document.querySelector("submit");
-const loginform = document.querySelector("login-form");
+const submit = document.querySelector(".submit");
+const formcontent = document.querySelector(".form-content");
 async function getUsers() {
   try {
     const response = await fetch("http://api.kesho.me/v1/user-test/contact");
@@ -125,7 +125,6 @@ async function getUsers() {
   }
 }
 
-getUsers();
 async function createUser(userData) {
   try {
     const response = await fetch("http://api.kesho.me/v1/user-test/create", {
@@ -140,7 +139,7 @@ async function createUser(userData) {
   }
 }
 
-loginform.addEventListener("submit", async (e) => {
+formcontent.addEventListener("submit", async (e) => {
   e.preventDefault();
 
   const userData = {
@@ -155,5 +154,5 @@ loginform.addEventListener("submit", async (e) => {
     await createUser(userData);
   }
 
-  loginform.reset();
+  formcontent.reset();
 });

@@ -14,15 +14,17 @@
 }
 .information {
   background-color: #dddddd;
-  max-width: 1600px;
-  width: 100%;
+
   height: 750px;
-  margin: 0 auto;
   padding: 15px;
 }
 .info-header {
   display: flex;
   justify-content: space-between;
+  max-width: 1400px;
+  width: 100%;
+
+  margin: 0 auto;
 }
 .p-roca {
   font-size: 45px;
@@ -38,7 +40,6 @@
   font-size: 158.3px;
   letter-spacing: 4.75px;
   line-height: 150px;
-  position: relative;
   color: #242424;
   font-family: "Poppins-ExtraBold";
 }
@@ -49,6 +50,7 @@
   position: absolute;
   color: #6e6c6c;
   top: 55px;
+
   font-family: "Poppins-ExtraBold";
 }
 .slideshow-container {
@@ -161,16 +163,21 @@
   margin-bottom: 53px;
   font-family: "Muli-Regular";
 }
-.hireme {
+.hire {
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
-  text-align: right;
+  text-align: center;
+}
+.hire p {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
   width: 152px;
   height: 50px;
   font-size: 15px;
   line-height: 29px;
-  text-align: right;
+
   color: #ffffff;
   background-color: #e93656;
 }
@@ -289,6 +296,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   background-color: #131a36;
   margin-bottom: 200px;
 }
@@ -320,6 +328,11 @@
   color: #ffffff;
   margin-bottom: 15px;
   font-family: "Bold";
+}
+.cont3-title {
+  font-size: 25px;
+  letter-spacing: 0.75px;
+  color: #ffffff;
 }
 .cont3-p {
   font-size: 14px;
@@ -459,6 +472,7 @@
   font-size: 28px;
   letter-spacing: 0.84px;
   font-family: "Bold";
+  color: #ffffff;
 }
 .ball {
   width: 13px;

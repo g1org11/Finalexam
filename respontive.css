@@ -1,0 +1,377 @@
+@media only screen and (max-width: 1600px) {
+  .article-section1 {
+    flex-direction: column;
+  }
+  .article-section2 {
+    flex-direction: column;
+  }
+  .articl-section3 {
+    flex-direction: column;
+  }
+  .date {
+    width: 100%;
+    height: 60px;
+  }
+  .date p {
+    transform: rotate(360deg);
+  }
+  .article-image img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .info-header {
+    justify-content: space-between;
+  }
+
+  .service {
+    display: grid;
+    grid-template-columns: 285px 285px 285px;
+    gap: 10px;
+    justify-content: center;
+  }
+  .service-div {
+    margin-top: 30px;
+  }
+  .projects {
+    display: grid;
+    grid-template-columns: 300px 300px;
+  }
+  .myinfo {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+  }
+  .my-info-content {
+    max-width: 634px;
+
+    text-align: center;
+    margin: 0;
+    margin-top: 30px;
+  }
+  .biography {
+    width: 634px;
+    margin: 0;
+  }
+  .hire {
+    justify-content: center;
+  }
+  .slide-img {
+    width: 630px;
+    height: 603px;
+    margin: 0;
+  }
+  .skill-bars {
+    margin: 0;
+    margin-top: 30px;
+    width: 630px;
+  }
+  .icon-img {
+    margin-left: 20px;
+  }
+  .contact {
+    margin: 0;
+    margin-top: 40px;
+    height: 250px;
+  }
+  .txt {
+    max-width: 397px;
+    margin: 0;
+    margin-right: 20px;
+  }
+
+  .balls {
+    margin: 0;
+    margin-left: 40px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .form-inputes input {
+    width: 250px;
+  }
+  .form-area textarea {
+    width: 780px;
+  }
+  .submit {
+    margin: 0;
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .service {
+    display: grid;
+    grid-template-columns: 285px 285px;
+  }
+  .name {
+    font-size: 65px;
+    line-height: 70px;
+  }
+  .projects {
+    display: grid;
+    grid-template-columns: 400px;
+  }
+  .project-imgs {
+    width: 400px;
+    height: 350px;
+    display: block;
+  }
+  .txt {
+    max-width: 297px;
+    margin: 0;
+    margin-right: 20px;
+  }
+  .slide4-img {
+    margin-right: 0;
+    margin-bottom: 30px;
+    margin-top: 100px;
+  }
+  .image {
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+  }
+  .slider-item {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .caption {
+    margin-top: 100px;
+  }
+  .balls {
+    margin-top: 60px;
+  }
+  .Recommendations {
+    height: 300px;
+  }
+  .section-1-1 {
+    max-width: 600px;
+    width: 100%;
+  }
+  .section-- {
+    max-width: 600px;
+    width: 100%;
+  }
+  .date {
+    max-width: 600px;
+    width: 100%;
+  }
+  .article-image {
+    max-width: 600px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .form-inputes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .form-inputes input {
+    width: 250px;
+  }
+  .form-area textarea {
+    width: 600px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .contact {
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .name {
+    font-size: 55px;
+    line-height: 70px;
+  }
+  .biography {
+    width: 534px;
+    margin: 0;
+    font-size: 20px;
+  }
+  .hire p {
+    font-size: 20px;
+  }
+  .slide-img {
+    width: 530px;
+    height: 603px;
+  }
+  .skill-bars {
+    width: 530px;
+  }
+  .service {
+    display: grid;
+    grid-template-columns: 485px;
+    gap: 10px;
+    justify-content: center;
+  }
+  .service-div {
+    width: 485px;
+  }
+  .serviceicon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+  .servise-title {
+    font-size: 25px;
+  }
+  .decription-title {
+    font-size: 25px;
+  }
+  .description-text {
+    font-size: 20px;
+  }
+  .Recommendations {
+    height: 750px;
+    flex-direction: column-reverse;
+  }
+  .balls {
+    display: block;
+  }
+  .ball {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+  }
+  .slider-item {
+    flex-direction: column;
+  }
+  .txt {
+    max-width: 500px;
+    margin-top: 30px;
+  }
+  .image {
+    width: 150px;
+    height: 150px;
+    vertical-align: middle;
+    margin-top: 0px;
+  }
+  .slide4-img {
+    margin-top: 0px;
+    margin-top: 80px;
+  }
+  .caption {
+    margin-top: 0px;
+  }
+  .txt {
+    text-align: center;
+    font-size: 18px;
+  }
+  .slide4-job {
+    font-size: 16px;
+  }
+  .slide4-name {
+    font-size: 30px;
+  }
+  #sidebar {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .lists {
+    margin-left: 50px;
+    max-width: 500px;
+    width: 100%;
+    height: 300px;
+  }
+  .projectbody {
+    flex-direction: column;
+  }
+  .project-imgs {
+    width: 500px;
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+  .information {
+    background-color: #dddddd;
+
+    height: 850px;
+    padding: 15px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .form-inputes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .form-inputes input {
+    width: 290px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+  }
+  .form-area textarea {
+    max-width: 400px;
+    width: 100%;
+  }
+  .form-area {
+    display: flex;
+    justify-content: center;
+  }
+  #sidebar {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .lists {
+    margin-left: 0px;
+    max-width: 500px;
+    width: 100%;
+    height: 300px;
+  }
+  .project-imgs {
+    max-width: 500px;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .biography {
+    max-width: 434px;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+  .skill-bars {
+    max-width: 530px;
+    width: 100%;
+  }
+  .service {
+    display: grid;
+    grid-template-columns: 385px;
+    gap: 10px;
+    justify-content: center;
+  }
+  .service-div {
+    max-width: 385px;
+    width: 100%;
+  }
+  .slide-img {
+    max-width: 430px;
+    width: 100%;
+    height: 603px;
+  }
+  .section5-title h1 {
+    font-size: 40px;
+  }
+  #sidebar {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .project-imgs {
+    max-width: 350px;
+    width: 100%;
+  }
+}
