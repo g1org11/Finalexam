@@ -110,6 +110,8 @@ for (let i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+///////////////////////ligin/////////
+
 const yourname = document.querySelector(".yourname");
 const email = document.querySelector(".emailaddress");
 const website = document.querySelector(".Yourwebsite");
@@ -157,7 +159,7 @@ formcontent.addEventListener("submit", async (e) => {
   formcontent.reset();
 });
 function Functionalert() {
-  alert("Thank you for getting in touch! We appreciate you contacting us.");
+  Swal.fire("Good job!", "Thank you for getting in touch! We appreciate you contacting us.", "success");
 }
 
 const modalOpenBtn = document.querySelector(".submit");
