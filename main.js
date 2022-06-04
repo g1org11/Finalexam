@@ -156,3 +156,11 @@ formcontent.addEventListener("submit", async (e) => {
 
   formcontent.reset();
 });
+function Functionalert() {
+  alert("Thank you for getting in touch! We appreciate you contacting us.");
+}
+
+const modalOpenBtn = document.querySelector(".submit");
+modalOpenBtn.addEventListener("click", () => {
+  Functionalert();
+});

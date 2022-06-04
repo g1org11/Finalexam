@@ -833,12 +833,12 @@
   font-family: "Poppins-SemiBold";
   padding-top: 22px;
 }
-.submit {
+.submit-content {
   display: flex;
   justify-content: center;
   margin-top: 45px;
 }
-.submit input {
+.submit-content input {
   background-color: rgba(0, 0, 0, 0);
   padding: 16px 45px;
   color: #e93656;
