@@ -118,51 +118,54 @@ const website = document.querySelector(".Yourwebsite");
 const massage = document.querySelector("#area");
 const submit = document.querySelector(".submit");
 const formcontent = document.querySelector(".form-content");
-async function getUsers() {
-  try {
-    const response = await fetch("http://api.kesho.me/v1/user-test/contact");
-    const users = await response.json();
-  } catch (e) {
-    console.log("Error - ", e);
-  }
-}
+// async function getUsers() {
+//   try {
+//     const response = await fetch("http://api.kesho.me/v1/user-test/contact");
+//     const users = await response.json();
+//   } catch (e) {
+//     console.log("Error - ", e);
+//   }
+// }
 
-async function createUser(userData) {
-  try {
-    const response = await fetch("http://api.kesho.me/v1/user-test/create", {
-      method: "post",
-      body: JSON.stringify(userData),
-      headers: { "Content-Type": "application/json" },
-    });
-    await response.json();
-    await getUsers(); // TODO: შენახვის ედიტირების და წაშლის შემდეგ ახლიდან წამოიღეთ დატა
-  } catch (e) {
-    console.log("Error - ", e);
-  }
-}
+// async function createUser(userData) {
+//   try {
+//     const response = await fetch("http://api.kesho.me/v1/user-test/create", {
+//       method: "post",
+//       body: JSON.stringify(userData),
+//       headers: { "Content-Type": "application/json" },
+//     });
+//     await response.json();
+//     await getUsers();
+//   } catch (e) {
+//     console.log("Error - ", e);
+//   }
+// }
 
 formcontent.addEventListener("submit", async (e) => {
   e.preventDefault();
 
-  const userData = {
-    first_name: yourname.value,
-    email: email.value,
-    web: website.value,
-    massage: massage.value,
-  };
+  const login = "http://api.kesho.me/v1/user-test/contact";
 
-  if (yourname.value === "") {
-    // იქმნება
-    await createUser(userData);
-  }
-
-  formcontent.reset();
+  fetch(login, {
+    method: "POST",
+    headers: {
+      Accept: "application/json, text/plain, */*",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      username: yourname.value,
+      email: email.value,
+      website: website.value,
+      massage: massage.value,
+    }),
+  })
+    .then((response) => response.json())
+    .then((data) => console.log(data))
+    .catch((err) => {
+      console.log(err);
+    });
+  Functionalert();
 });
 function Functionalert() {
   Swal.fire("Good job!", "Thank you for getting in touch! We appreciate you contacting us.", "success");
 }
-
-const modalOpenBtn = document.querySelector(".submit");
-modalOpenBtn.addEventListener("click", () => {
-  Functionalert();
-});
