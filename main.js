@@ -165,6 +165,7 @@ formcontent.addEventListener("submit", async (e) => {
       console.log(err);
     });
   Functionalert();
+  formcontent.reset();
 });
 function Functionalert() {
   Swal.fire("Good job!", "Thank you for getting in touch! We appreciate you contacting us.", "success");
