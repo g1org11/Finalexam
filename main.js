@@ -158,12 +158,9 @@ formcontent.addEventListener("submit", async (e) => {
       website: website.value,
       massage: massage.value,
     }),
-  })
-    .then((response) => response.json())
-    .then((data) => console.log(data))
-    .catch((err) => {
-      console.log(err);
-    });
+  }).catch((err) => {
+    console.log(err);
+  });
   Functionalert();
   formcontent.reset();
 });
